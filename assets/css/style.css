@@ -60,13 +60,18 @@ i.fas {
     font-size: 14px;
 }
 
-header {
+.header-top {
     background: #297ab8;
 }
 
 header a {
     color: #fefefe;
     font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: pink;
 }
 
 header .header-flex {
@@ -81,4 +86,206 @@ header a.phone-icon {
 
 header .social-icons a {
     margin-right: 20px;
+}
+
+.main-menu {
+    background: #fff;
+    padding: 34px 0px;
+}
+
+.main-menu a {
+    color: #000;
+    font-family: 'Cambria';
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.main-menu .logo {
+    width: 100%;
+    /* display: block; */
+    flex: 2
+}
+
+.main-menu .menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 10;
+    align-items: center;
+}
+
+section.banner {
+    height: 800px;
+    position: relative;
+    background: url('../images/banner-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner .banner-bottom .banner-btn {
+    font-family: Cambria-Bold;
+}
+
+section.banner img {
+    /* width: 100%;
+    height: 800px; */
+}
+
+section.banner .banner-bottom {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    left: 0%;
+    right: 0%;
+}
+
+section.banner .banner-title {
+    margin-right: 170px
+}
+
+section.banner .banner-bottom h1 {
+    color: #0054a3;
+    font-size: 36px;
+    font-family: 'RubikMedium';
+    line-height: 30px;
+}
+
+section.banner .banner-bottom p {
+    font-size: 20px;
+    color: #393939;
+    margin-bottom: 0px;
+}
+
+section.banner button.get-approve {
+    background: #605eee;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 63px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* banner section end */
+
+
+/* funding secction start */
+
+section.funding {
+    display: flex;
+    padding: 94px 0px;
+    align-items: center;
+}
+
+section.funding .funding-heading {
+    max-width: 285px;
+    flex: 1;
+}
+
+section.funding .funding-heading h3 {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #5a5a5a;
+    padding-right: 55px;
+    line-height: 38px;
+}
+
+section.funding .funding-text {
+    flex: 1;
+}
+
+.funding-text p {
+    font-size: 16px;
+    color: #858585;
+    line-height: 28px;
+}
+
+section.offer {
+    background: #f7f9fb;
+    padding-top: 97px;
+}
+
+section.offer .offer-heading-text {
+    text-align: center;
+}
+
+section.offer .offer-heading-text h1 {
+    font-family: Cambria-Bold;
+    font-size: 32px;
+    color: #5a5a5a;
+    line-height: 46px;
+}
+
+section.offer .offer-heading-text p {
+    max-width: 565px;
+    text-align: center;
+    margin: auto;
+    color: #858585;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+section.offer .all-offers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 96px;
+}
+
+section.offer .all-offers .icons img {
+    margin-right: 16px;
+}
+
+section.offer .all-offers .single-offer {
+    display: flex;
+    flex-basis: 33.333333%;
+}
+
+section.offer .all-offers .offer-details h1 {
+    font-size: 22px;
+    line-height: 38px;
+    color: #646464;
+    font-family: 'RubikMedium';
+}
+
+section.offer .all-offers .offer-details p {
+    padding-bottom: 40px;
+}
+
+
+/* end offer section */
+
+
+/* have-question section start */
+
+section.have-question {
+    background: url(../images/have-question-bg.jpg);
+    padding: 63px 0px;
+    color: white;
+}
+
+section.have-question .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.have-question .question-text {
+    flex-basis: 645px;
+}
+
+button.question-btn {
+    background: transparent;
+    width: 270px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.question-text h2,
+.question-button {
+    font-family: 'Cambria-Bold';
 }
