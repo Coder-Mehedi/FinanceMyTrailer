@@ -40,6 +40,12 @@ p {
 body {
     font-family: 'RubikRegular';
     box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -86,7 +92,7 @@ header a:hover {
 header .header-flex {
     height: 76px;
     align-items: center;
-    /* margin: 0; */
+    justify-content: space-between;
 }
 
 header a.phone-icon {
@@ -297,6 +303,8 @@ button.question-btn {
     border: 2px solid #fff;
     border-radius: 10px;
     color: #fff;
+    font-family: 'Cambria';
+    font-weight: bold;
 }
 
 .question-text h2,
@@ -352,7 +360,7 @@ section.review {
 section.review .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-height: 370px;
 }
 
