@@ -23,7 +23,14 @@
     font-style: normal;
 }
 
-* {
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -252,6 +259,7 @@ section.offer .all-offers .offer-details h1 {
 
 section.offer .all-offers .offer-details p {
     padding-bottom: 40px;
+    max-width: 285px;
 }
 
 
@@ -262,8 +270,10 @@ section.offer .all-offers .offer-details p {
 
 section.have-question {
     background: url(../images/have-question-bg.jpg);
-    padding: 63px 0px;
     color: white;
+    min-height: 261px;
+    align-items: center;
+    display: flex;
 }
 
 section.have-question .container {
@@ -289,3 +299,262 @@ button.question-btn {
 .question-button {
     font-family: 'Cambria-Bold';
 }
+
+section.vehicle {
+    min-height: 570px;
+}
+
+section.vehicle h5 {
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: #5a5a5a;
+    max-width: 693px;
+    margin: 98px auto;
+}
+
+.vehicle-container {
+    /* padding-bottom: 125px; */
+    display: flex;
+    align-items: center;
+}
+
+.single-vehicle {
+    flex-basis: 25%;
+}
+
+.single-vehicle h6 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    height: 42px;
+    background: #3481d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    margin-right: 30px;
+}
+
+
+/* review section start */
+
+section.review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f9fb;
+    min-height: 370px;
+}
+
+section.review .review-text {
+    max-width: 560px;
+    font-size: 18px;
+    line-height: 34px;
+    color: #6b6b6b;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria;
+}
+
+strong {
+    font-size: 22px;
+    color: #003471;
+    line-height: 34px;
+    font-family: Cambria-Bold;
+    margin-top: 49px;
+}
+
+
+/* end review section */
+
+
+/* start business trailer section */
+
+section.business-trailer {
+    display: flex;
+    align-items: center;
+    min-height: 440px;
+}
+
+section.business-trailer .trailer-big {}
+
+section.business-trailer img {}
+
+section.business-trailer h5 {
+    font-family: 'Cambria-Bold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #5a5a5a;
+    margin-bottom: 52px;
+}
+
+section.business-trailer p.agreement-text {
+    margin-bottom: 44px;
+}
+
+section.business-trailer p {
+    color: #858585;
+    font-size: 16px;
+}
+
+
+/* end business trainler section */
+
+
+/* start contact section */
+
+
+/* contact section inherited from question section */
+
+section.have-question.contact {
+    min-height: 371px;
+}
+
+section.contact p.text-head {
+    margin-bottom: 40px;
+    margin-top: 27px;
+}
+
+
+/* end contact section */
+
+
+/* start how to apply section */
+
+section.how-to-apply {
+    min-height: 555px
+}
+
+section.how-to-apply .apply-text {
+    text-align: center;
+}
+
+section.how-to-apply h1 {
+    margin: 39px 0;
+}
+
+section.how-to-apply .apply-text>p {
+    max-width: 950px;
+    margin: 0 auto 74px;
+    text-align: left;
+}
+
+section.how-to-apply .apply-options {
+    display: flex;
+}
+
+section.how-to-apply .apply-options .options {
+    flex: 1 1 33.3333%;
+    background: #f2f5f8;
+    margin-right: 30px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 163px;
+}
+
+
+/* how to apply section end */
+
+
+/* industry-attention section start */
+
+section.industry-attention {
+    background: #fbfcfd;
+    min-height: 405px;
+}
+
+.industry-attention-container {
+    justify-content: center;
+}
+
+.industry,
+.attention {
+    flex-basis: 560px;
+}
+
+section.industry-attention h2 {
+    font-family: 'Cambria-Bold';
+    font-size: 24px;
+    color: #5a5a5a;
+    line-height: 46px;
+    margin-bottom: 34px;
+    margin-top: 68px;
+}
+
+section.industry-attention p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #858585;
+}
+
+section.industry-attention p.attention-text-top {
+    margin-bottom: 40px;
+    ;
+}
+
+
+/* end .industry-attention-container section */
+
+
+/* start how-we-roll section */
+
+section.how-we-roll {
+    display: flex;
+    align-items: center;
+    min-height: 440px;
+    justify-content: space-between;
+}
+
+section.how-we-roll h3 {
+    font-family: 'Cambria-Bold';
+    font-size: 24px;
+    color: #5a5a5a;
+    line-height: 46px;
+}
+
+section.how-we-roll p {
+    max-width: 660px;
+}
+
+section.how-we-roll .roll-image {}
+
+section.how-we-roll img {}
+
+
+/* end how-we-roll section */
+
+
+/* rock-industry-blue section start */
+
+section.rock-industry-blue {
+    min-height: 370px;
+}
+
+section.rock-industry-blue h2 {}
+
+section.rock-industry-blue p {
+    max-width: 645px;
+}
+
+section.rock-industry-blue ul {
+    list-style: none;
+}
+
+section.rock-industry-blue li {
+    font-family: 'Cambria';
+    font-size: 22px;
+    line-height: 38px;
+}
+
+section.rock-industry-blue li .tick {
+    margin-right: 14px;
+}
+
+section.rock-industry-blue {}
+
+section.rock-industry-blue {}
