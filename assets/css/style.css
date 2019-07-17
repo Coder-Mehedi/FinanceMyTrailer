@@ -30,7 +30,9 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+address,
+p {
     margin: 0;
     padding: 0;
 }
@@ -260,6 +262,8 @@ section.offer .all-offers .offer-details h1 {
 section.offer .all-offers .offer-details p {
     padding-bottom: 40px;
     max-width: 285px;
+    color: #929292;
+    line-height: 28px;
 }
 
 
@@ -325,7 +329,7 @@ section.vehicle h5 {
 
 .single-vehicle h6 {
     text-transform: uppercase;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     height: 42px;
     background: #3481d1;
     display: flex;
@@ -335,17 +339,20 @@ section.vehicle h5 {
     z-index: 1;
     position: relative;
     color: #fff;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 
 /* review section start */
 
 section.review {
+    background: #f7f9fb;
+}
+
+section.review .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f7f9fb;
     min-height: 370px;
 }
 
@@ -515,6 +522,7 @@ section.how-we-roll h3 {
     font-size: 24px;
     color: #5a5a5a;
     line-height: 46px;
+    margin-bottom: 37px;
 }
 
 section.how-we-roll p {
@@ -535,7 +543,11 @@ section.rock-industry-blue {
     min-height: 370px;
 }
 
-section.rock-industry-blue h2 {}
+section.rock-industry-blue h2 {
+    margin-bottom: 44px;
+    font-family: 'Cambria-Bold';
+    line-height: 38px;
+}
 
 section.rock-industry-blue p {
     max-width: 645px;
@@ -557,4 +569,46 @@ section.rock-industry-blue li .tick {
 
 section.rock-industry-blue {}
 
-section.rock-industry-blue {}
+section.companys {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+
+/* end company section */
+
+
+/* start footer contact section */
+
+section.footer-contact {
+    min-height: 202px;
+    background: #2f72a1;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.container.flex.footer-flex>* {
+    flex: 1 1 33.33333%;
+}
+
+p.m-23,
+address.m-23 {
+    margin-bottom: 23px;
+}
+
+footer.footer {
+    min-height: 86px;
+    background: #1d1d1d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer.footer p {
+    font-size: 18px;
+    line-height: 40.3px;
+    color: #999999;
+}
