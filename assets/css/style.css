@@ -76,7 +76,7 @@ i.fas {
 }
 
 .header-top {
-    background: #297ab8;
+    background: linear-gradient(42deg, #297ab8, #6252d0);
 }
 
 header a {
@@ -118,7 +118,14 @@ header .social-icons a {
 .main-menu .logo {
     width: 100%;
     /* display: block; */
-    flex: 2
+    flex: 2;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-menu .menu {
@@ -172,7 +179,7 @@ section.banner .banner-bottom p {
 }
 
 section.banner button.get-approve {
-    background: #605eee;
+    background: linear-gradient(90deg, #297ab8, #6252d0);
     border-radius: 50px;
     border: none;
     padding: 15px 63px;
@@ -284,6 +291,7 @@ section.have-question {
     min-height: 261px;
     align-items: center;
     display: flex;
+    background-size: auto 100%;
 }
 
 section.have-question .container {
@@ -339,7 +347,7 @@ section.vehicle h5 {
     text-transform: uppercase;
     /* margin-bottom: 0px; */
     height: 42px;
-    background: #3481d1;
+    background: linear-gradient();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,6 +356,7 @@ section.vehicle h5 {
     position: relative;
     color: #fff;
     margin-right: 15px;
+    background: linear-gradient(42deg, #297ab8, #6252d0);
 }
 
 
@@ -449,27 +458,53 @@ section.how-to-apply .apply-text {
 
 section.how-to-apply h1 {
     margin: 39px 0;
+    font-family: 'Cambria-Bold';
+    font-size: 32px;
+    line-height: 46px;
+    color: #5a5a5a;
 }
 
 section.how-to-apply .apply-text>p {
     max-width: 950px;
     margin: 0 auto 74px;
     text-align: left;
+    line-height: 26px;
+    color: #858585;
+    font-size: 16px;
 }
 
 section.how-to-apply .apply-options {
     display: flex;
 }
 
+section.how-to-apply .apply-options>* {
+    margin-right: 30px;
+}
+
 section.how-to-apply .apply-options .options {
     flex: 1 1 33.3333%;
     background: #f2f5f8;
-    margin-right: 30px;
     justify-content: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 163px;
+}
+
+section.how-to-apply .option-text h3 {
+    color: #5a5a5a;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'RubikMedium';
+}
+
+section.how-to-apply .option-text p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #858585;
+}
+
+section.how-to-apply .option-text {
+    margin-left: 25px;
 }
 
 
@@ -534,7 +569,9 @@ section.how-we-roll h3 {
 }
 
 section.how-we-roll p {
-    max-width: 660px;
+    max-width: 665px;
+    color: #858585;
+    line-height: 26px;
 }
 
 section.how-we-roll .roll-image {}
@@ -555,10 +592,14 @@ section.rock-industry-blue h2 {
     margin-bottom: 44px;
     font-family: 'Cambria-Bold';
     line-height: 38px;
+    font-size: 30px;
 }
 
 section.rock-industry-blue p {
     max-width: 645px;
+    font-size: 17px;
+    line-height: 28px;
+    color: #d7d7d7;
 }
 
 section.rock-industry-blue ul {

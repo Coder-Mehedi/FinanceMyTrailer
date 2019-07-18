@@ -74,4 +74,13 @@
         flex-basis: 90%;
         margin: 0 auto;
     }
+    section.banner .banner-bottom {
+        bottom: 10%;
+    }
+    section.banner button.get-approve {
+        padding: 7px 30px;
+    }
+    section.funding {
+        padding: 0px;
+    }
 }
