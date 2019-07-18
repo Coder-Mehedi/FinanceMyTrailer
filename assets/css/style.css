@@ -104,8 +104,12 @@ header .social-icons a {
 }
 
 .main-menu {
+    position: relative;
     background: #fff;
-    padding: 34px 0px;
+    padding: 51.5px 0px;
+    height: 130px;
+    z-index: 1;
+    width: 100%;
 }
 
 .main-menu a {
@@ -186,6 +190,32 @@ section.banner button.get-approve {
     font-size: 20px;
     color: #fff;
     font-weight: 600;
+}
+
+#six {
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+#six:after {
+    content: '';
+    position: absolute;
+    background: blueviolet;
+    width: 1%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: cubic-bezier(0.895, 0.03, 0.685);
+    transition-duration: 0.4s;
+    z-index: -1;
+}
+
+#six:hover {
+    color: white;
+}
+
+#six:hover::after {
+    width: 100%;
 }
 
 
@@ -292,6 +322,7 @@ section.have-question {
     align-items: center;
     display: flex;
     background-size: auto 100%;
+    /* background-attachment: fixed; */
 }
 
 section.have-question .container {
@@ -309,7 +340,7 @@ button.question-btn {
     width: 270px;
     height: 64px;
     border: 2px solid #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     font-family: 'Cambria';
     font-weight: bold;
@@ -320,8 +351,12 @@ button.question-btn {
     font-family: 'Cambria-Bold';
 }
 
+.question-text h2 {
+    margin-bottom: 27px;
+}
+
 section.vehicle {
-    min-height: 570px;
+    min-height: 565px;
 }
 
 section.vehicle h5 {
@@ -330,7 +365,8 @@ section.vehicle h5 {
     text-align: center;
     color: #5a5a5a;
     max-width: 693px;
-    margin: 98px auto;
+    margin: 98px auto 78px;
+    font-family: 'Cambria-Bold';
 }
 
 .vehicle-container {
@@ -345,13 +381,11 @@ section.vehicle h5 {
 
 .single-vehicle h6 {
     text-transform: uppercase;
-    /* margin-bottom: 0px; */
     height: 42px;
-    background: linear-gradient();
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3px;
+    margin-top: -48px;
     z-index: 1;
     position: relative;
     color: #fff;
@@ -633,10 +667,10 @@ section.companys {
 
 section.footer-contact {
     min-height: 202px;
-    background: #2f72a1;
     display: flex;
     color: #fff;
     align-items: center;
+    background: linear-gradient(145deg, #297ab8, #6252d0);
 }
 
 .container.flex.footer-flex>* {
@@ -660,4 +694,10 @@ footer.footer p {
     font-size: 18px;
     line-height: 40.3px;
     color: #999999;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0%;
+    transition: all 1s ease-in-out;
 }
